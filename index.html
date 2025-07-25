@@ -1,164 +1,65 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julia & Leo – Unsere Hochzeit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #fdf8f4;
-      font-family: 'Raleway', sans-serif;
-      color: #3e3e3e;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 80px 20px 40px;
-      background: #fff5ee;
-    }
-    header h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 4em;
-      color: #b77b63;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #5c5c5c;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      font-size: 2em;
-      border-bottom: 2px solid #e1cfc3;
-      padding-bottom: 5px;
-      color: #8b5e3c;
-    }
-    .timeline ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .timeline li {
-      padding: 10px 0;
-      border-left: 3px solid #d4a373;
-      padding-left: 15px;
-      margin-left: 5px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    .countdown {
-      text-align: center;
-      font-size: 1.5em;
-      margin-top: 20px;
-      font-weight: bold;
-      color: #a05e3c;
-    }
-    footer {
-      text-align: center;
-      background: #f0e4db;
-      padding: 30px;
-      font-size: 0.9em;
-      color: #5e4b43;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #d4a373;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-  </style>
-</head>
-<body>
+<!-- Google Fonts: Parisienne (für Namen), Raleway (für Text) -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 
-<!-- Hintergrundmusik -->
-<audio autoplay loop>
-  <source src="ordinary.mp3" type="audio/mpeg">
-  Dein Browser unterstützt keine Hintergrundmusik.
-</audio>
-
-<header>
-  <h1>Julia & Leo</h1>
-  <p>Wir feiern die Liebe – und ihr seid Teil davon</p>
-</header>
-
-<section>
-  <h2>Unsere Meilensteine</h2>
-  <div class="timeline">
-    <ul>
-      <li>2015 – Zusammengekommen ❤️</li>
-      <li>2019 – Zusammengezogen 🏡</li>
-      <li>2025 – Verlobt 💍</li>
-      <li>10.03.2026 – Standesamtliche Trauung</li>
-      <li>22.08.2026 – Unsere große Hochzeit</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Rückblick in Bildern</h2>
-  <div class="gallery">
-    <img src="bild1.jpg" alt="Bild 1 von Julia und Leo">
-    <img src="bild2.jpg" alt="Bild 2 von Julia und Leo">
-    <img src="bild3.jpg" alt="Bild 3 von Julia und Leo">
-  </div>
-</section>
-
-<section>
-  <h2>Countdown zur Hochzeit</h2>
-  <div class="countdown" id="countdown">
-    Wird geladen...
-  </div>
-</section>
-
-<section style="text-align:center; margin-top: 40px;">
-  <h2>Location</h2>
-  <p>Villa Eugenia, Schlossplatz 5, 72379 Hechingen</p>
-  <a class="button" href="https://maps.app.goo.gl/bXzjNNE3WL64RjRz7" target="_blank">Zur Google Maps Karte</a>
-</section>
-
-<footer>
-  © 2025 Julia & Leo · Wir freuen uns riesig auf euch!
-</footer>
-
-<!-- Countdown Script -->
-<script>
-  const zielDatum = new Date("2026-08-22T15:00:00").getTime();
-  const countdownEl = document.getElementById("countdown");
-
-  function updateCountdown() {
-    const jetzt = new Date().getTime();
-    const abstand = zielDatum - jetzt;
-
-    const tage = Math.floor(abstand / (1000 * 60 * 60 * 24));
-    const stunden = Math.floor((abstand % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minuten = Math.floor((abstand % (1000 * 60 * 60)) / (1000 * 60));
-    const sekunden = Math.floor((abstand % (1000 * 60)) / 1000);
-
-    countdownEl.innerHTML = `${tage} Tage, ${stunden} Std, ${minuten} Min, ${sekunden} Sek`;
+<style>
+  body {
+    background-color: #f7f1e8; /* elegantes Beige */
+    font-family: 'Raleway', sans-serif;
+    color: #5b4433; /* Bronze */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
   }
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
+  header {
+    background: #f2e7d5;
+    text-align: center;
+    padding: 80px 20px 40px;
+  }
 
-</body>
-</html>
+  header h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 4em;
+    color: #a97448; /* Gold-Bronze */
+    margin: 0;
+  }
+
+  header p {
+    font-size: 1.2em;
+    color: #6e5240;
+  }
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    border-bottom: 2px solid #dbc3a3;
+    padding-bottom: 5px;
+    color: #8a6742;
+  }
+
+  .countdown {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #9c6b3e;
+  }
+
+  footer {
+    background: #f2e7d5;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+    color: #6a5240;
+  }
+
+  a.button {
+    display: inline-block;
+    background-color: #c18f5a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+</style>
+
