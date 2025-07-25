@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unsere Hochzeit – Julia & Leo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #e8d8d3;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .info {
+      margin-top: 20px;
+    }
+    .rsvp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #d4a373;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #f3f3f3;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Julia & Leo</h1>
+    <p>Wir heiraten – und ihr seid eingeladen!</p>
+  </header>
+
+  <section>
+    <h2>Wann & Wo</h2>
+    <div class="info">
+      <p><strong>Datum:</strong> 22. Juni 2026</p>
+      <p><strong>Ort:</strong> Villa Eugenia, Hechingen</p>
+      <p><strong>Adresse:</strong> Schlossplatz 5, 72379 Hechingen</p>
+      <p><strong>Beginn:</strong> 15:00 Uhr (Trauung), anschließend Feier</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ablauf</h2>
+    <div class="info">
+      <ul>
+        <li>15:00 Uhr – Freie Trauung im Garten</li>
+        <li>16:00 Uhr – Sektempfang & Fotos</li>
+        <li>18:00 Uhr – Dinner in der Villa</li>
+        <li>20:00 Uhr – Party mit DJ</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dresscode</h2>
+    <div class="info">
+      <p>Festlich – gerne sommerlich-elegant in hellen Farben ☀️</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Geschenke</h2>
+    <div class="info">
+      <p>Das schönste Geschenk ist eure Anwesenheit. Wenn ihr uns dennoch etwas schenken möchtet, freuen wir uns über einen Beitrag zu unserer Hochzeitsreise.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Zusagen</h2>
+    <p>Bitte gebt uns bis zum <strong>1. Mai 2026</strong> Bescheid.</p>
+    <a href="mailto:hochzeit@julia-und-leo.de?subject=Unsere Zusage zur Hochzeit" class="rsvp-btn">Jetzt zusagen</a>
+  </section>
+
+  <footer>
+    © 2026 Julia & Leo – Wir freuen uns riesig auf euch!
+  </footer>
+
+</body>
+</html>
+
